@@ -1,0 +1,124 @@
+/* Using CSS variables for consistent branding and easier maintenance */
+:root {
+    --primary: #6366f1;
+    --danger: #ef4444;
+    --success: #22c55e;
+    --bg: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: var(--text-main);
+}
+
+.todo-card {
+    background: var(--card-bg);
+    width: 100%;
+    max-width: 450px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+}
+
+.completed #task-title {
+    text-decoration: line-through;
+    color: var(--text-muted);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    gap: 12px;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.tag {
+    background: #f1f5f9;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    color: var(--text-main);
+}
+
+.btn:focus, input:focus { 
+    outline: 3px solid var(--primary); 
+    outline-offset: 2px; 
+}
+
+.card-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s ease;
+}
+
+/* Explicitly styling both action buttons */
+.edit-btn { background: #e2e8f0; color: var(--text-main); }
+.edit-btn:hover { background: #cbd5e1; }
+
+.delete-btn { background: var(--danger); color: white; }
+.delete-btn:hover { opacity: 0.9; }
+
+.date-info {
+    margin-bottom: 12px;
+}
+
+.time-hint {
+    display: block; /* Moves "Due in 5 days" below the date */
+    font-weight: bold;
+    color: var(--primary);
+    margin-top: 4px;
+    font-size: 0.9rem;
+}
+
+.status-row {
+    display: flex;
+    align-items: center;
+    gap: 12px; 
+    margin-bottom: 15px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.priority-badge {
+    background-color: #fee2e2;
+    color: #991b1b;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    white-space: nowrap; 
+}
