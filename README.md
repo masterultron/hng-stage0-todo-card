@@ -1,19 +1,16 @@
-This is my Stage 0 task for the HNG internship. I built a testable todo card focusing on accessibility and responsive design using vanilla HTML, CSS, and JS.
+# React + Vite
 
-# HNG Stage 0: Frontend Todo Card
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-A clean, responsive, and testable Todo Card component built for the HNG Internship Stage 0 task.
+Currently, two official plugins are available:
 
-## Features
-- **Semantic HTML**: Built using `<article>`, `<time>`, and proper heading structures.
-- **Accessibility**: Fully keyboard navigable with visible focus states and ARIA labels.
-- **Responsive Design**: Fluid layout that works from 320px up to 1200px.
-- **Dynamic Logic**: Vanilla JS calculates time remaining based on a fixed deadline.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Tech Stack
-- HTML5
-- CSS3 (Custom Variables & Flexbox)
-- Vanilla JavaScript
+## React Compiler
 
-## Testing
-The component includes specific `data-testid` attributes for automated testing as per the task requirements.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
