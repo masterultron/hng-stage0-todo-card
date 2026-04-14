@@ -158,11 +158,11 @@ const TodoCard = () => {
         </div>
 
         <div className="flex gap-2 shrink-0">
-          <button ref={editButtonRef} data-testid="test-todo-edit-button" onClick={startEditing} className="text-slate-400 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded p-1" aria-label="Edit Task">
-            ✏️
+          <button ref={editButtonRef} data-testid="test-todo-edit-button" onClick={startEditing} className="text-slate-400 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded p-1 text-sm font-semibold" aria-label="Edit Task">
+            Edit
           </button>
-          <button data-testid="test-todo-delete-button" onClick={() => alert("Delete trigger")} className="text-slate-400 hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 rounded p-1" aria-label="Delete Task">
-            🗑️
+          <button data-testid="test-todo-delete-button" onClick={() => alert("Delete trigger")} className="text-slate-400 hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 rounded p-1 text-sm font-semibold" aria-label="Delete Task">
+            Delete
           </button>
         </div>
       </div>
